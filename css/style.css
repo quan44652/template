@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+:root {
+    --one-color: #3B82F4;
+    --two-color: #32B3FE;
+    --three-color: #FFAB00;
+    --four-color: #FFE001;
+    --five-color: #404040;
+    --six-color: #FFFFFF;
+    --seven-color: #F5F5F5;
+    --eight-color: #C4C4C4;
+    --nine-color: #808080;
+    --ten-color: linear-gradient(138.6deg, #32B3FE 13.17%, #3B82F4 84.95%);
+    ;
+    --eleven-color: linear-gradient(138.6deg, #FFE001 13.17%, #FFAB00 84.95%);
+    ;
+}
+
+
+
+
+.header {
+    background-image: url('../images/Vector\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.logo {
+    width: 120px;
+    margin-left: 130px;
+    padding-top: 24px;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header-banner {
+    width: 500px;
+}
+
+.header-left {
+    background-image: url('../images/Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px;
+    margin-left: 12px;
+}
+
+.header-left form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.form-address .btn:hover {
+    background-color: #EFF5FF;
+    color: var(--one-color);
+}
+
+.btn {
+    padding: 6px 0;
+    min-width: 100px;
+    background-color: var(--eight-color);
+    border-radius: 2px;
+    font-size: 12px;
+    outline: none;
+    color: var(--six-color);
+}
+
+.form-address .active {
+    background-color: #EFF5FF;
+    color: var(--one-color);
+}
+
+.file-upload {
+    position: relative;
+}
+
+
+.file-upload--icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    width: 12px;
+}
+
+
+.select2-selection {
+    min-width: 340px;
+    height: 40px;
+    margin: 0;
+    padding-left: 7px;
+}
+
+.select2-results__option {
+    font-size: 14px;
+    color: var(--nine-color);
+}
+
+.header-left form {
+    width: 340px;
+}
+
+.form-group input,
+.form-group label {
+    width: 100%;
+    height: 40px;
+    margin-top: 14px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding-left: 12px;
+    font-size: 12px;
+    background-color: var(--six-color);
+    color: var(--nine-color);
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+.select2-option {
+    width: 322px;
+
+}
+
+.selection {
+    position: relative;
+}
+
+.selection::after {
+    position: absolute;
+    content: "";
+    border: 5px solid;
+    top: 50%;
+    right: 12px;
+    border-color: var(--nine-color) transparent transparent transparent;
+    transform: translateY(-25%);
+}
+
+.form-group span {
+    font-size: 12px;
+    color: var(--six-color);
+    display: block;
+}
+
+.form-group .form-message {}
+
+.btn-submit {
+    margin-top: 16px;
+    background-color: var(--three-color);
+}
+
+.btn-submit:hover {
+    background-color: var(--six-color);
+    color: #FFAB00;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    position: relative;
+    padding: 4px 40px 4px 8px;
+    background-color: var(--two-color);
+    border-radius: 99px;
+    font-size: 12px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    position: absolute;
+    top: 18%;
+    right: 4px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--six-color);
+    border-radius: 999px;
+}
+
+
+.select2-results__option[aria-selected] {
+    padding-left: 12px;
+}
+
+.select2-results__option[aria-selected]:hover {
+    background-color: var(--two-color);
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: none;
+}

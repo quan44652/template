@@ -197,7 +197,7 @@ input[type="file"] {
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     position: absolute;
-    top: 18%;
+    top: 6px;
     right: 4px;
     width: 14px;
     height: 14px;
@@ -220,4 +220,41 @@ input[type="file"] {
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
     border: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    border: none;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    margin: 0;
+}
+
+.header-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/Group\ 8.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center right;
+}
+
+.header-image--item {
+    width: 450px;
+
+}
+
+.header-image--item:nth-child(2) {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+
+.header-image--item img {
+    width: 100%;
 }

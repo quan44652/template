@@ -1,331 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-            crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
-            integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <div id="app" class="container-fluid">
-            <div data-aos="fade-up" class="header">
-                <div class="logo"><img src="./images/Logo.png" alt=""></div>
-                <div class="row">
-                    <div class="col-md-6 header-left" data-aos="fade-right"
-                        data-aos-offset="1000"
-                        data-aos-easing="ease-in-sine">
-                        >
-                        <img class="header-banner" src="./images/banner.png"
-                            alt="">
-                        <form id="form">
-                            <div class="form-address">
-                                <button class="btn active">Hà Nội</button>
-                                <button class="btn">Đà Nẵng</button>
-                                <button class="btn">TP.HCM</button>
-                            </div>
-                            <div class="form">
-                                <div class="form-group">
-                                    <select id="select" multiple
-                                        name="states[]">
-                                        <option class="select2-option"
-                                            value="AL">Java</option>
-                                        <option class="select2-option"
-                                            value="AL">C++</option>
-                                        <option class="select2-option"
-                                            value="AL">PHP</option>
-                                    </select>
-                                    <span class="form-message"></span>
-
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="Họ và tên">
-                                    <span class="form-message"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text"
-                                        placeholder="Số điện thoại">
-                                    <span class="form-message"></span>
-
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="Email">
-                                    <span class="form-message"></span>
-
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="file-upload"
-                                        class="file-upload">
-                                        Đính kèm CV
-                                        <img class="file-upload--icon"
-                                            src="./images/icon-1.png" alt="">
-                                    </label>
-                                    <input id="file-upload" type="file"/>
-                                    <span class="form-message"></span>
-
-                                    <span class="custom-file-upload">File định
-                                        dạng .doc, .docx, .pdf
-                                        <=2mb</span>
-                                </div>
-                            </div>
-                            <button class="btn btn-submit">Ứng tuyển</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 header-right" data-aos="fade-left"
-                        data-aos-anchor="#example-anchor"
-                        data-aos-offset="1000"
-                        data-aos-duration="1000">
-                        <div class="header-image">
-                            <div class="header-image--item">
-                                <img src="./images/image-1.png" alt="">
-                            </div>
-                            <div class="header-image--item">
-                                <img src="./images/image-2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="app" class="container-fluid">
+      <section class="header">
+        <div class="logo"><img src="./images/Logo.png" alt=""></div>
+        <div class="row">
+          <div class="col-md-6 header-left">
+            <img class="header-banner"
+              src="./images/cumstom1.png"
+              alt="">
+            <form id="form-1">
+              <div class="form-address">
+                <span class="btn active">Hà Nội</span>
+                <span class="btn">Đà Nẵng</span>
+                <span class="btn">TP.HCM</span>
+              </div>
+              <div class="form">
+                <div class="form-group">
+                  <select id="select" multiple
+                    name="states[]">
+                    <option class="select2-option"
+                      value="AL">Java</option>
+                    <option class="select2-option"
+                      value="AL">C++</option>
+                    <option class="select2-option"
+                      value="AL">PHP</option>
+                  </select>
                 </div>
-            </div>
-            <div data-aos="fade-up" class="content">
-                <h2 class="content-heading">6 Lí Do</h2>
-                <h4 class="content-title">BẠN NÊN THAM GIA <br>
-                    CHƯƠNG TRÌNH FRESHER 2021</h4>
-
-                <div class="row content-list">
-                    <div class="col-md-4 content-item" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <div class="content-wapper">
-                            <div class="content-wrapper--img">
-                                <img src="./images/product-1.png" alt="">
-                            </div>
-                            <div class="content-wapper--info">
-                                <h4>Phúc lợi hấp dẫn</h4>
-                                <p>Gói phúc lợi hấp dẫn: Trợ cấp
-                                    học tập và làm việc; trợ cấp ăn
-                                    trưa, gửi xe...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 content-item" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <div class="content-wapper">
-                            <div class="content-wrapper--img">
-                                <img src="./images/product-2.png" alt="">
-                            </div>
-                            <div class="content-wapper--info">
-                                <h4>Mentor nhiều kinh nghiệm</h4>
-                                <p>Được đào tạo và làm việc với
-                                    những kĩ sư giỏi, có kinh nghiệm
-                                    lâu năm.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 content-item" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <div class="content-wapper">
-                            <div class="content-wrapper--img">
-                                <img src="./images/product-3.png" alt="">
-                            </div>
-                            <div class="content-wapper--info">
-                                <h4>Làm việc thực tế</h4>
-                                <p>Được làm việc thực tế trong các dự
-                                    án với quy trình chuẩn và luôn cập
-                                    nhật công nghệ mới nhất.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 content-item" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <div class="content-wapper">
-                            <div class="content-wrapper--img">
-                                <img src="./images/product-4.png" alt="">
-                            </div>
-                            <div class="content-wapper--info">
-                                <h4>Tham gia các khóa đào tạo</h4>
-                                <p>Được tham gia vào các khóa đào
-                                    tạo nội bộ: khóa học kĩ năng mềm,
-                                    kỹ thuật; lớp học ngoại ngữ ...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 content-item" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <div class="content-wapper">
-                            <div class="content-wrapper--img">
-                                <img src="./images/product-5.png" alt="">
-                            </div>
-                            <div class="content-wapper--info">
-                                <h4>Tham gia Câu Lạc Bộ</h4>
-                                <p>Được tham gia vào các Câu lạc bộ do
-                                    công ty tài trợ: Bóng đá, cầu lông,
-                                    bơi lội, yoga, âm nhạc, guitar ...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 content-item" data-aos="fade-up"
-                        data-aos-anchor-placement="top-bottom">
-                        <div class="content-wapper">
-                            <div class="content-wrapper--img">
-                                <img src="./images/product-6.png" alt="">
-                            </div>
-                            <div class="content-wapper--info">
-                                <h4>Cơ hội trở thành nhân viên chính thức
-                                </h4>
-                                <p>Được ưu tiên trở thành nhân viên chính thức
-                                    sau khóa đào tạo và tham gia dự án thực tế
-                                    với mức lương khởi điểm cạnh tranh.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form-group">
+                  <input type="text" id="fullname"
+                    placeholder="Họ và tên">
+                  <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="mobile"
+                    placeholder="Số điện thoại">
+                  <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="email"
+                    placeholder="Email">
+                  <span class="form-message"></span>
                 </div>
 
+                <div class="form-group">
+                  <label for="file-upload"
+                    class="file-upload">
+                    Đính kèm CV
+                    <img class="file-upload--icon"
+                      src="./images/icon-1.png"
+                      alt="">
+                  </label>
+                  <input id="file-upload" type="file"/>
+                  <span class="form-message"></span>
+                  <span class="custom-file-upload">File
+                    định
+                    dạng .doc, .docx, .pdf
+                    <=2mb</span>
+                </div>
+              </div>
+              <button class="btn btn-submit submit">Ứng tuyển</button>
+              <button class="btn btn-submit loading"><img
+                  src="./images/reload 1.png" alt=""></button>
+            </form>
+          </div>
+          <div class="col-md-6 header-right">
+            <div class="header-image">
+              <div class="header-image--item">
+                <img src="./images/image-7.png" alt="">
+              </div>
+              <div class="header-image--item">
+                <img src="./images/image-5.png" alt="">
+              </div>
             </div>
-            <div data-aos="fade-up" class="about">
-                <div class="row">
-                    <div class="col-md-8 about-content">
-                        <h1 class="about-heading">VỀ CHÚNG TÔI</h1>
-                        <div class="about-content--text">
-                            <p><span class="about-strong">HYBRID TECHNOLOGIES</span>
-                                là công ty công nghệ phần mềm
-                                liên doanh Nhật - Việt,
-                                phát triển các dịch vụ và mô hình làm việc đa
-                                dạng
-                                như mô hình hybrid, mô hình
-                                ủy thác hay lĩnh vực trí tuệ nhân tạo.</p>
-                            <p>Trải qua gần 5 năm phát triển không ngừng nghỉ và
-                                gặt
-                                hái được những thành tựu
-                                nhất định, Hybrid Technologies hiện có 5 trụ sở
-                                văn
-                                phòng tại Việt Nam và Nhật Bản,
-                                với gần 700 nhân viên cùng hàng trăm các dự án,
-                                khách hàng trong nhiều lĩnh vực
-                                công nghệ khác nhau.</p>
-                            <p>Với Chiến dịch Đào tạo Tài năng trẻ - Fresher
-                                Program, Hybrid Technologies hứa hẹn
-                                sự bùng nổ của thế hệ nhân tài Công nghệ thông
-                                tin
-                                đầy triển vọng, cùng nhau tiếp tục phát triển,
-                                vươn
-                                tới tầm cao mới.</p>
-                        </div>
-                        <button class="btn btn-submit">GIA NHẬP CÙNG CHÚNG TÔI</button>
-                    </div>
-                    <div class="col-md-4 about-image">
-                        <div class="about-wapper--img">
-                            <img src="./images/about-1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="about-banner">
-                    <div class="banner-content">
-                        <img src="./images/banner.png" alt="">
-                        <span>Cùng nhau phát triển - Vươn tới tầm cao mới</span>
-                        <button class="btn btn-submit">GIA NHẬP
-                            CÙNG CHÚNG TÔI</button>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-up" class="footer">
-                <div class="row">
-                    <div class="col-md-4 footer-logo">
-                        <img src="./images/Logo.png" alt="">
-                    </div>
-                    <div class="col-md-8 footer-contact">
-                        <h1>KẾT NỐI VỚI CHÚNG TÔI</h1>
-                        <ul class="contact-list">
-                            <li class="contact-item">
-                                <img class="contact-icon"
-                                    src="./images/icon-2.png" alt="">
-                                https://jobs.hybrid-technologies.vn/</li>
-                            <li class="contact-item">
-                                <img class="contact-icon"
-                                    src="./images/icon-3.png" alt="">
-                                Hybrid Technologies Co., Ltd</li>
-                            <li class="contact-item">
-                                <img class="contact-icon"
-                                    src="./images/icon-4.png" alt="">
-                                Trụ sở chính Hồ Chí Minh: 90 Nguyễn Đình Chiểu,
-                                P.Đa Kao, Quận 1, TP.HCM</li>
-                            <li class="contact-item">
-                                <img class="contact-icon"
-                                    src="./images/icon-4.png" alt="">
-                                Chi nhánh Hà Nội: 219 Trung Kính, P.Yên Hòa,
-                                Quận Cầu Giấy, Hà Nội</li>
-                            <li class="contact-item">
-                                <img class="contact-icon"
-                                    src="./images/icon-4.png" alt="">
-                                Chi nhánh Đà Nẵng: 255-257 Hùng Vương, P.Vĩnh
-                                Trung, Quận Thanh Khê, Đà Nẵng</li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="why">
 
+        <h2 class="content-heading">6 Lí Do</h2>
+        <h4 class="content-title">BẠN NÊN THAM GIA <br>
+          CHƯƠNG TRÌNH FRESHER 2021</h4>
+
+        <div class="row content-list">
+          <div class="col-md-4 content-item" data-aos="fade-up"
+            data-aos-duration="1000">
+            <div class="content-wapper">
+              <div class="content-wrapper--img">
+                <img src="./images/product-1.png" alt="">
+              </div>
+              <div class="content-wapper--info">
+                <h4>Phúc lợi hấp dẫn</h4>
+                <p>Gói phúc lợi hấp dẫn: Trợ cấp thực tập,
+                  Attractive allowance package: trợ cấp
+                  học tập và làm việc; trợ cấp ăn trưa,
+                  gửi xe</p>
+              </div>
             </div>
-            <div data-aos="fade-up" class="popup">
-                <div class="popup__overlay">
-                    <div class="popup__wrapper">
-                        <div class="popup__body">
-                            <h1>Cảm ơn bạn đã ứng tuyển</h1>
-                            <p>Cám ơn bạn đã quan tâm và gửi hồ sơ ứng tuyển cho
-                                chương trình <br>
-                                “ <span class="popup__light-hight">Fresher 2021:
-                                    BE THE CHANGE</span> ”</p>
-                            <p>Vui lòng kiểm tra email xác nhận (bao gồm cả hòm
-                                thư
-                                rác) để đảm bảo
-                                chúng tôi đã nhận được hồ sơ của bạn. <br>
-                                Nếu chưa nhận được bất kì email phản hồi nào,
-                                vui
-                                lòng liên lạc qua
-                                email: <span class="popup__light-hight">marketing@hybrid-technologies.co.jp</span>
-                                để được
-                                hỗ trợ.</p>
-                            <p>Đừng quên truy cập vào: <span
-                                    class="popup__light-hight">https://fresher.hybrid-technologies.vn</span>
-                                để cập
-                                nhật những thông tin mới nhất về chương trình
-                                nhé!</p>
-                            <p>Trân trọng,<br>
-                                Fresher 2021: Be The Change</p>
-                            <button class="btn btn_close">Close</button>
-                            <div class="icon-close">
-                                <img src="./images/icon-5.png" alt="">
-                            </div>
-                            <div class="icon-popup">
-                                <img src="./images/popup-1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4 content-item" data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="content-wapper">
+              <div class="content-wrapper--img">
+                <img src="./images/product-2.png" alt="">
+              </div>
+              <div class="content-wapper--info">
+                <h4>Mentor nhiều kinh nghiệm</h4>
+                <p>Được đào tạo và làm việc với
+                  những kĩ sư giỏi, có kinh nghiệm
+                  lâu năm.</p>
+              </div>
             </div>
-            <div id="croll-top" class="scroll-top">
-                <button class="btn"><i class="fa-solid fa-arrow-up"></i></button>
+          </div>
+          <div class="col-md-4 content-item" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="content-wapper">
+              <div class="content-wrapper--img">
+                <img src="./images/product-3.png" alt="">
+              </div>
+              <div class="content-wapper--info">
+                <h4>Làm việc thực tế</h4>
+                <p>Được làm việc thực tế trong các dự
+                  án với quy trình chuẩn và luôn cập
+                  nhật công nghệ mới nhất.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 content-item" data-aos="fade-up"
+            data-aos-duration="1000">
+            <div class="content-wapper">
+              <div class="content-wrapper--img">
+                <img src="./images/product-4.png" alt="">
+              </div>
+              <div class="content-wapper--info">
+                <h4>Tham gia các khóa đào tạo</h4>
+                <p>Được tham gia vào các khóa đào
+                  tạo nội bộ: khóa học kĩ năng mềm,
+                  kỹ thuật; lớp học ngoại ngữ ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 content-item" data-aos="fade-up"
+            data-aos-duration="2000">
+            <div class="content-wapper">
+              <div class="content-wrapper--img">
+                <img src="./images/product-5.png" alt="">
+              </div>
+              <div class="content-wapper--info">
+                <h4>Tham gia Câu Lạc Bộ</h4>
+                <p>Được tham gia vào các Câu lạc bộ do
+                  công ty tài trợ: Bóng đá, cầu lông,
+                  bơi lội, yoga, âm nhạc, guitar ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 content-item" data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="content-wapper">
+              <div class="content-wrapper--img">
+                <img src="./images/product-6.png" alt="">
+              </div>
+              <div class="content-wapper--info">
+                <h4>Cơ hội trở thành nhân viên chính thức
+                </h4>
+                <p>Được ưu tiên trở thành nhân viên chính
+                  thức
+                  sau khóa đào tạo và tham gia dự án thực
+                  tế
+                  với mức lương khởi điểm cạnh tranh.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="row">
+          <div class="col-md-8 about-content">
+            <h1 class="about-heading">VỀ CHÚNG TÔI</h1>
+            <div class="about-content--text">
+              <p><span class="about-strong">HYBRID TECHNOLOGIES</span>
+                là công ty công nghệ phần mềm
+                liên doanh Nhật - Việt,
+                phát triển các dịch vụ và mô hình làm việc đa
+                dạng
+                như mô hình hybrid, mô hình
+                ủy thác hay lĩnh vực trí tuệ nhân tạo.</p>
+              <p>Trải qua gần 5 năm phát triển không ngừng nghỉ và
+                gặt
+                hái được những thành tựu
+                nhất định, Hybrid Technologies hiện có 5 trụ sở
+                văn
+                phòng tại Việt Nam và Nhật Bản,
+                với gần 700 nhân viên cùng hàng trăm các dự án,
+                khách hàng trong nhiều lĩnh vực
+                công nghệ khác nhau.</p>
+              <p>Với Chiến dịch Đào tạo Tài năng trẻ - Fresher
+                Program, Hybrid Technologies hứa hẹn
+                sự bùng nổ của thế hệ nhân tài Công nghệ thông
+                tin
+                đầy triển vọng, cùng nhau tiếp tục phát triển,
+                vươn
+                tới tầm cao mới.</p>
+            </div>
+            <button class="btn btn-submit">GIA NHẬP CÙNG CHÚNG TÔI</button>
+          </div>
+          <div class="col-md-4 about-image">
+            <div class="about-wapper--img">
+              <img src="./images/about-1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="about-banner">
+          <div class="banner-content">
+            <img src="./images/cumstom1.png" alt="">
+            <button class="btn btn-submit">GIA NHẬP
+              CÙNG CHÚNG TÔI</button>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="row">
+          <div class="col-md-4 footer-logo">
+            <img src="./images/Logo.png" alt="">
+          </div>
+          <div class="col-md-8 footer-contact">
+            <h1>KẾT NỐI VỚI CHÚNG TÔI</h1>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <img class="contact-icon"
+                  src="./images/icon-2.png" alt="">
+                https://jobs.hybrid-technologies.vn/</li>
+              <li class="contact-item">
+                <img class="contact-icon"
+                  src="./images/icon-3.png" alt="">
+                Hybrid Technologies Co., Ltd</li>
+              <li class="contact-item">
+                <img class="contact-icon"
+                  src="./images/icon-4.png" alt="">
+                Trụ sở chính Hồ Chí Minh: 90 Nguyễn Đình Chiểu,
+                P.Đa Kao, Quận 1, TP.HCM</li>
+              <li class="contact-item">
+                <img class="contact-icon"
+                  src="./images/icon-4.png" alt="">
+                Chi nhánh Hà Nội: 219 Trung Kính, P.Yên Hòa,
+                Quận Cầu Giấy, Hà Nội</li>
+              <li class="contact-item">
+                <img class="contact-icon"
+                  src="./images/icon-4.png" alt="">
+                Chi nhánh Đà Nẵng: 255-257 Hùng Vương, P.Vĩnh
+                Trung, Quận Thanh Khê, Đà Nẵng</li>
+            </ul>
+          </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-            integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
-            integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
+      </section>
+      <section class="popup">
+        <div class="popup__overlay">
+          <div class="popup__wrapper">
+            <div class="popup__body">
+              <h1>Cảm ơn bạn đã ứng tuyển</h1>
+              <p>Cám ơn bạn đã quan tâm và gửi hồ sơ ứng tuyển cho
+                chương trình <br>
+                “ <span class="popup__light-hight">Fresher 2021:
+                  BE THE CHANGE</span> ”</p>
+              <p>Vui lòng kiểm tra email xác nhận (bao gồm cả hòm
+                thư
+                rác) để đảm bảo
+                chúng tôi đã nhận được hồ sơ của bạn. <br>
+                Nếu chưa nhận được bất kì email phản hồi nào,
+                vui
+                lòng liên lạc qua
+                email: <span class="popup__light-hight">marketing@hybrid-technologies.co.jp</span>
+                để được
+                hỗ trợ.</p>
+              <p>Đừng quên truy cập vào: <span
+                  class="popup__light-hight">https://fresher.hybrid-technologies.vn</span>
+                để cập
+                nhật những thông tin mới nhất về chương trình
+                nhé!</p>
+              <p>Trân trọng,<br>
+                Fresher 2021: Be The Change</p>
+              <button class="btn btn_close">Close</button>
+              <div class="icon-close">
+                <img src="./images/icon-5.png" alt="">
+              </div>
+              <div class="icon-popup">
+                <img src="./images/popup-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="croll-top" class="scroll-top">
+        <button class="btn"><i class="fa-solid fa-arrow-up"></i></button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+      integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
             
             $(document).ready(function() {
     $('#select').select2(
@@ -334,10 +332,21 @@
         }
     );});
 </script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
   AOS.init();
 </script>
-        <script src="./js/main.js"></script>
-    </body>
+    <script src="./js/main.js"></script>
+    <script>
+      Validator({
+        form: '#form-1',
+        errorSelector: '.form-message',
+        rules: [
+          Validator.isRequired('#fullname'),
+          Validator.isEmail('#email'),
+          Validator.isMobile('#mobile'),
+        ]
+      })
+    </script>
+  </body>
 </html>

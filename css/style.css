@@ -865,6 +865,7 @@ input[type="file"] {
         align-items: center;
         margin-top: 15px;
         width: 100%;
+        min-height: 36px;
     }
 
     .btn {
@@ -1185,5 +1186,10 @@ input[type="file"] {
         padding-left: 28px;
         padding-top: 28px;
         width: 96px;
+    }
+
+    .popup__wrapper {
+        margin: 0 24px;
+        padding: 0 24px;
     }
 }

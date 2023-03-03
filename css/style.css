@@ -77,6 +77,10 @@ body {
     padding-right: 0;
 }
 
+.header-left .form {
+    margin-top: 26px;
+}
+
 .header-left form {
     display: flex;
     flex-direction: column;
@@ -90,10 +94,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-height: 56px;
 }
 
 .form-address .btn:hover {
-    background-color: #EFF5FF;
+    background-color: var(--seven-color);
     color: var(--one-color);
 }
 
@@ -111,8 +116,7 @@ body {
 }
 
 .loading {
-    display: none;
-
+    transform: rotate(360deg);
 }
 
 .loading img {
@@ -132,6 +136,10 @@ body {
 .form-address .active {
     background-color: #EFF5FF;
     color: var(--one-color);
+}
+
+.form-address .btn:active {
+    opacity: 0.8;
 }
 
 .file-upload {
@@ -180,7 +188,8 @@ body {
 }
 
 .form-group {
-    margin-top: 20px;
+    margin-top: 6px;
+    min-height: 81px;
 }
 
 .invalid input {
@@ -239,8 +248,9 @@ input[type="file"] {
 }
 
 .btn-submit:hover {
-    background-color: var(--six-color);
-    color: #FFAB00;
+    opacity: 0.8;
+    background-color: var(--three-color);
+    color: var(--six-color);
 }
 
 .select2-container--default .select2-selection--multiple {
@@ -675,6 +685,7 @@ input[type="file"] {
     right: 14px;
     top: 14px;
     width: 20px;
+    cursor: pointer;
 }
 
 .popup__wrapper .icon-close:hover {
@@ -693,7 +704,7 @@ input[type="file"] {
 }
 
 .btn_close:hover {
-    background-color: red;
+    background-color: var(--three-color);
     color: var(--six-color);
 }
 
@@ -703,6 +714,7 @@ input[type="file"] {
     right: 0;
     width: 220px;
 }
+
 
 .popup__wrapper .icon-popup img {
     width: 100%;
@@ -857,8 +869,9 @@ input[type="file"] {
 
     .btn {
         padding: 8px 12px;
-        min-width: 0px;
-        font-weight: 400
+        min-width: 90px;
+        font-weight: 400;
+        font-size: 14px;
     }
 
     .btn-submit {
@@ -879,6 +892,11 @@ input[type="file"] {
         z-index: 0;
     }
 
+    .form-group {
+        margin-top: 0;
+        min-height: 60px;
+    }
+
     .form-group span {
         font-size: 14px;
     }
@@ -888,12 +906,14 @@ input[type="file"] {
         width: 100%;
         min-width: 300px;
         height: 36px;
-
+        font-size: 14px;
         padding-left: 12px;
     }
 
-    .form-group {
-        margin-top: 12px;
+
+
+    .select2-container--default .select2-search--inline .select2-search__field {
+        font-size: 14px;
     }
 
     .select2-container--default .select2-selection--multiple {
@@ -901,17 +921,19 @@ input[type="file"] {
         width: 100px;
     }
 
+
     .select2-container--default .select2-selection--multiple .select2-selection__rendered {
-        display: flex;
-        align-items: center;
+        display: block;
         margin-left: 5px;
         padding-left: 0;
     }
+
 
     .select2-selection {
         min-width: 300px;
         height: 36px;
     }
+
 
     .select2-container--default .select2-selection--multiple {
         position: relative;
@@ -928,6 +950,7 @@ input[type="file"] {
         width: 300px;
         padding: 6px 0;
         padding-left: 12px;
+        font-size: 14px;
     }
 
     .select2-container--default .select2-results__option[aria-selected=true] {
@@ -942,10 +965,10 @@ input[type="file"] {
         padding: 4px 0;
         background-color: var(--two-color);
         border-radius: 99px;
-        font-size: 16px;
+        font-size: 14px;
         padding-left: 12px;
         margin-top: 0;
-
+        margin-top: 3px;
     }
 
     .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
@@ -963,8 +986,10 @@ input[type="file"] {
         border-radius: 999px;
     }
 
+
     .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
         font-size: 14px;
+
     }
 
     .why {
@@ -1050,14 +1075,14 @@ input[type="file"] {
     }
 
     .about-content--text p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 22px;
         text-align: center;
     }
 
     .about-content--text .about-strong {
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .about-image {

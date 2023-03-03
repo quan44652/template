@@ -1,0 +1,38 @@
+{
+  "address": [
+    {
+      "location": {
+        "name": "Hà Nội",
+        "value": "han"
+      },
+      "language": [
+         "PHP",
+        "Vuejs",
+         "HTML",
+         "CSS"
+      ],
+      "id": 1
+    },
+    {
+      "location": {
+        "name": "Đà Nẵng",
+        "value": "dan"
+      },
+      "language": [
+         "PHP",
+         "React"
+      ],
+      "id": 2
+    },
+    {
+      "location": {
+        "name": "Hồ Chí Minh",
+        "value": "hcm"
+      },
+      "language": [
+        "Javascript"
+      ],
+      "id": 3
+    }
+  ]
+}

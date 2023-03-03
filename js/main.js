@@ -49,7 +49,7 @@ const Validator = (options) => {
     return !errorMessage;
   };
 
-  // Lấy element form cần validate
+  // Get element form to validate
   const formElement = document.querySelector(options.form);
   if (formElement) {
     // submit form
@@ -65,12 +65,28 @@ const Validator = (options) => {
         }
       });
       if (isFormValid) {
-        submit.style.display = "none";
-        loading.style.display = "block";
-        loading.style.transform = "360deg";
+        // Get value from form
+        const lenguages = document.querySelector("#select").selectedOptions;
+        const lenguageValue = Array.from(lenguages).map((item) => item.value);
+        const name = document.querySelector("#fullname");
+        const email = document.querySelector("#email");
+        const mobile = document.querySelector("#mobile");
+        const file = document.querySelector("#file-upload");
+        const data = {
+          lenguage: lenguageValue,
+          name: name.value,
+          email: email.value,
+          mobile: mobile.value,
+          file: file.value,
+        };
+        console.log(data);
+        //handle loading and popup
+        submit.innerHTML = `<img
+        src="./images/reload 1.png" alt="">`;
+        submit.classList.add("loading");
         setTimeout(() => {
-          submit.style.display = "block";
-          loading.style.display = "none";
+          submit.classList.remove("loading");
+          submit.innerHTML = `Ứng tuyển`;
           popup.style.display = "block";
         }, 2000);
       }
@@ -79,11 +95,11 @@ const Validator = (options) => {
     options.rules.forEach((rule) => {
       const inputElement = formElement.querySelector(rule.selector);
       if (inputElement) {
-        // Xử lí trường hợp blur ra ngoài
+        // Handling the case of blur to the outside
         inputElement.onblur = () => {
           validate(inputElement, rule);
         };
-        // Xử lí khi người dùng nhập
+        // Handling the case of user input
         inputElement.oninput = () => {
           const errorElement = inputElement.parentElement.querySelector(
             options.errorSelector
@@ -96,7 +112,7 @@ const Validator = (options) => {
   }
 };
 
-// Định nghĩa Rules
+// Define Rules
 
 Validator.isRequired = (selector) => {
   return {
